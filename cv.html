@@ -1,0 +1,61 @@
+<html data-theme="light">
+    <head>    
+        <meta charset="utf-8">
+        <!-- title of the page -->    
+        <title>	My Learning Management System </title> 
+
+        <!-- Link an external CSS file -->
+        <link rel="stylesheet" href="style.css"> 
+ 
+    </head>  
+    <body>    
+        <header> 
+            <h1 id="welcome"> My Learning Management System </h1> 
+            <p> Curriculum Vitae </p>   
+            <button onclick="toggleTheme()">Toggle Theme</button>
+        </header>    
+        <nav>
+            <div class="nav-container">
+                <ul>
+                    <li><a href="index.html">Home</a></li>        
+                             
+                </ul>
+                <p style="color: black;"id="datetime"></p>
+                
+            </div>
+        </nav>    
+
+        <main>
+            <section id ="todo-list" style="display: none;">
+                <div id="taskbtn">
+                    <button onclick="addTask()">Add</button>
+                    <button onclick="">Save</button>
+                    <button onclick="">Load</button>
+                 </div>
+                 <ul id="taskList"></ul> 
+
+            </section>
+    
+            <section class="cv-section">
+                <h2>Academic & Professional Profile</h2>
+                
+                <!-- The iframe embeds the PDF directly into the layout -->
+                <iframe src="NavidullahMohammadi_CV.pdf" width="100%" height="800px" style="border: 1px solid #ccc; border-radius: 8px;">
+                    <!-- Fallback text just in case their browser doesn't support PDFs -->
+                    <p>Your browser does not support PDFs. 
+                    <a href="NavidullahMohammadi_CV.pdf" download>Download the PDF</a>.
+                    </p>
+            </iframe>
+            </section>
+                <a href="NavidullahMohammadi_CV.pdf" download="NavidullahMohammadi_CV.pdf" class="btn-download">
+                    Download CV (PDF File)
+                </a>
+            </section>
+
+            <footer>   <p>©Copyright 2025 by All rights reversed.</inset></p>    </footer>  
+
+        </main>
+
+         <script src="script.js"></script>
+    </body>
+</html>
