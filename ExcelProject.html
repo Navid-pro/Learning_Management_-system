@@ -1,0 +1,69 @@
+<html data-theme="light">
+    <head>    
+        <meta charset="utf-8">
+        <title> My Learning Management System </title> 
+
+        <link rel="stylesheet" href="style.css"> 
+ 
+    </head>  
+    <body>    
+        <header> 
+            <h1 id="welcome"> My Learning Management System </h1> 
+            <p>Learning Modules </p>   
+            <button onclick="toggleTheme()">Toggle Theme</button>
+        </header>    
+        <nav>
+            <div class="nav-container">
+                <ul>
+                    <li><a href="index.html">Home</a></li>        
+                             
+                </ul>
+                <p style="color: black;"id="datetime"></p>
+                
+            </div>
+        </nav>    
+
+        <main>
+            <section id="project">
+    <h2>Interactive Weather Dashboard</h2>
+    
+    <div class="project-layout">
+        <div class="project-details">
+            <p id="password-hint">
+                A comprehensive data visualization tool built entirely in Microsoft Excel. 
+                This project transforms raw meteorological data into an interactive, 
+                user-friendly dashboard. It utilizes advanced spreadsheet functions, 
+                dynamic charts, and conditional formatting to cleanly organize and 
+                display complex weather trends. Developing this dashboard allowed me 
+                to practice data cleaning, logical formula construction, and analytical 
+                layout design—essential skills for bridging the gap between raw data and 
+                actionable technical insights.
+            </p>
+            
+            <a href="https://github.com/Navid-pro/Interactive-Weather-Dashboard.git" target="_blank" class="btn-github">
+                View Source on GitHub
+            </a>
+        </div>
+
+        <div class="project-visual">
+            <h2>Dashboard Layout Screenshot</h2>
+            <img src="DashboarScreenshot.jpg" alt="Dashboard screenshot">
+        </div>
+        <section>
+             <!-- The iframe embeds the PDF directly into the layout -->
+                <iframe src="DashboardGuide.pdf" width="100%" height="800px" style="border: 1px solid #ccc; border-radius: 8px;">
+                    <!-- Fallback text just in case their browser doesn't support PDFs -->
+                    <p>Your browser does not support PDFs. 
+                    <a href="DashboardGuide.pdf" download>Download the PDF</a>.
+                    </p>
+            </iframe>
+            </section>
+                <a href="DashboardGuide.pdf" download="DashboardGuide.pdf" class="btn-download">
+                    Download Documentation (PDF File)
+                </a>
+        </section>
+    </div>
+</section>
+
+            <footer>   
+                <p>©Copyright 2025 by Navidullah. All rights reserved.</p>
